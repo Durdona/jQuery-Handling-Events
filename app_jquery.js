@@ -7,7 +7,6 @@ else{
 	button.attachEvent('onclick', function() {alert('Clicked IE Button'); }); // IE handles it differently 
 }
 
-
 /********************** Handling Events  http://james.padolsey.com/jquery/ ********************/
 // jQuery event shortcuts:  
 // .click()
@@ -424,3 +423,10 @@ $('#MyDiv').bind('mouseenter mouseleave mouseup', function(element){
  $('p.green').hover(function(){ // one handler(function) which is the in(mouseenter) and the out(mouseleave) 
  	$(this).toggleClass('over'); // class 'over' is created in style css filen
  }); // This code will toggle the class applied to a paragraph element 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
