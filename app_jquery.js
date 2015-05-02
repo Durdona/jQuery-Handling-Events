@@ -425,7 +425,7 @@ $('#MyDiv').bind('mouseenter mouseleave mouseup', function(element){
  }); // This code will toggle the class applied to a paragraph element 
  
 // Another Example of hover effect  
-/* <div id="clickMeButton"><br>Click Me</br></div> */
+/* <div id="clickMeButton"><br/><strong>Click Me</strong></div>  */
 	$(document).ready(function(){
 		$('#clickMeButton').mouseenter({
 			$('#clickMeButton').fadeTo('fast', 1);	
