@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Handling Events</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	<div id="table">
+	
+	<fieldset>
+	<table>
+	<legend><span>Practicing Events</span></legend>
+	
+	<tr>
+		<th>Input & button</th>
+		<th>Old fashion way of .click()</th>
+		<th>Click event inside another click event</th>
+		<th>myId without .onclick()</th>
+		<th>Button with .onclick()</th>
+		<th>ID Button with Custom function</th>
+		<th>Updating text of the Button</th>
+	</tr>
+	<tr>
+		<td><input class="empty changeEvent"><input value="Button" type="button"> </td>  <!-- input has two classes separated with a space. this is how we have multiple classes on a single element --> 
+		<td><input class="empty"><input id="SubmitFirst" type="button" value="Submit"></td>
+		<td><input class="empty"><input id="otherID" type="button" value="otherID"></td>
+		<td><input class="empty"><input id="myID" type="button" value="myIDButton"></td>
+		<td><input id="cellOutputButton" onclick="testButton()" value="cellButton" type="button"></td>
+		<td><input id="idButton" value="idButton" type="button"></td>
+		<td><input id="mergeButton" value="mergeButton" type="button"><textarea class="changeEvent"></textarea></td>
+		<div id="divOutput"></div>	
+	</tr>		
+	</table>
+	</fieldset>
+	</div>
+<br />
+<div id="mouseEvent">Mouse Event</div>
+<div id="mouseEventChaining">Mouse Event Chaining</div>
+<div id="bindEvent">Bind Event</div>
+	<div id="field">
+	<table id="onEvent">
+
+		<tr id="MyDiv">
+			<td>John</td>
+			<td>Doe</td>
+		</tr>		
+		<tr id="target">
+			<td>Jin</td>
+			<td>Leaner</td>
+		</tr>
+		<tr>
+			<td>Michele</td>
+			<td>James</td>
+		</tr>	
+		<tr>
+			<td>Heedy</td>
+			<td>Faust</td>
+		</tr>
+		<tr>
+			<td>Tina</td>
+			<td>Smith</td>
+		</tr>
+		<tr>
+			<td>Supna</td>
+			<td>Patoria</td>
+		</tr>	
+		<tr>
+			<td>Spike</td>
+			<td>Francis</td>
+		</tr>
+		<tr>
+			<td>Dan</td>
+			<td>Wahin</td>
+		</tr>
+			<button id="addRow">Click to add Row</button>
+	</table>
+	</div>
+
+	<div>
+	<p class="green">Lorem ipsum dolor sit amet, vis ex copiosae oporteat. Pro an sapientem incorrupte, repudiare mnesarchum ex eos. An nullam labore lobortis vis, error assentior pri ad. Vidit imperdiet id duo, sed atqui concludaturque at. Elitr vitae tractatos eu his. Mentitum accusata te vel.</p>
+	
+	<p> Ius option consetetur ut, an ius facilisis interpretaris, movet nominati ne vim. An has amet utamur neglegentur, te mei sanctus minimum vivendum. Vis ei justo omittantur disputationi. Id per esse nostrud voluptua. Legimus democritum comprehensam nec ad. </p>
+</div>
+
+	<form>
+	<p>
+		<label for="userName"> User Name</label>
+		<input type="text" placeholder="username" id="userName">
+	</p>
+
+	<p>
+		<label for="password">Password</label>
+		<input type="password" placeholder="password" id="password">
+	</p>
+
+	<p>
+		<input id="button" type="button" value="Submit">
+	</p>
+	<div id="fireButton"></div>
+	</form>
+
+	<table>
+		<td>
+		<select id="selectState" class="changeEvent">
+			<option value="NY">NY</option>
+			<option value="DC" selected="true">DC</option>
+			<option value="AZ">AZ</option>
+		</select>
+		</td>
+	</table>
+	
+<script type="text/javascript"
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script>window.jQuery||document.write('<script src="jquery_min.js"><\/script>');</script>
+
+<script type="text/javascript" src="app_jquery.js"></script>
+
+</body>
+</html>
