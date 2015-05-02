@@ -424,7 +424,17 @@ $('#MyDiv').bind('mouseenter mouseleave mouseup', function(element){
  	$(this).toggleClass('over'); // class 'over' is created in style css filen
  }); // This code will toggle the class applied to a paragraph element 
  
- 
+// Another Example of hover effect  
+/* <div id="clickMeButton"><br>Click Me</br></div> */
+	$(document).ready(function(){
+		$('#clickMeButton').mouseenter({
+			$('#clickMeButton').fadeTo('fast', 1);	
+		});	
+		$('#clickMeButton').mouseleave({
+			$('#clickMeButton').fadeTo('fast', 0.5); //its original css style 	
+		});
+	});
+	
  
  
  
